@@ -1,0 +1,43 @@
+\usetikzlibrary{arrows}
+
+\tikzset{every picture/.style={>=triangle 90}}
+
+\renewcommand{\implies}{\Rightarrow}
+\DeclareRobustCommand{\textImplies}{\tikz \draw (-3ex,.25ex) -- (-.25ex,.25ex) (-3ex,-.25ex) -- (-.25ex,-.25ex) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex);}
+\DeclareRobustCommand{\mathImplies}{\mathrel{\textImplies}}
+\DeclareRobustCommand{\Implies}{\ifmmode\expandafter\mathImplies\else\textImplies\fi\xspace}
+\DeclareRobustCommand{\textImpliedBy}{\tikz \draw (3ex,.25ex) -- (.25ex,.25ex) (3ex,-.25ex) -- (.25ex,-.25ex) (.5ex,.5ex) -- (0,0) -- (.5ex,-.5ex);}
+\DeclareRobustCommand{\mathImpliedBy}{\mathrel{\textImpliedBy}}
+\DeclareRobustCommand{\ImpliedBy}{\ifmmode\mathImpliedBy\else\textImpliedBy\fi\xspace}
+\DeclareRobustCommand{\textnotImplies}{\tikz \draw (-3ex,.25ex) -- (-.25ex,.25ex) (-3ex,-.25ex) -- (-.25ex,-.25ex) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex) (-2ex,-.75ex) -- (-1ex,.75ex);}
+\DeclareRobustCommand{\mathnotImplies}{\mathrel{\textnotImplies}}
+\DeclareRobustCommand{\notImplies}{\ifmmode\mathnotImplies\else\textnotImplies\fi\xspace}
+\DeclareRobustCommand{\textIff}{\tikz \draw (-3ex,.25ex) -- (-.25ex,.25ex) (-3ex,-.25ex) -- (-.25ex,-.25ex) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex) (-2.75ex,.5ex) -- (-3.25ex,0) -- (-2.75ex,-.5ex);}
+\DeclareRobustCommand{\mathIff}{\mathrel{\textIff}}
+\DeclareRobustCommand{\Iff}{\ifmmode\mathIff\else\textIff\fi\xspace}
+
+\DeclareRobustCommand{\textToFrom}{\tikz \draw  (0,0) -- (-3.25ex,0) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex) (-2.75ex,.5ex) -- (-3.25ex,0) -- (-2.75ex,-.5ex);}
+\DeclareRobustCommand{\mathToFrom}{\mathrel{\textToFrom}}
+\DeclareRobustCommand{\ToFrom}{\ifmmode\mathToFrom\else\textToFrom\fi\xspace}
+
+\DeclareRobustCommand{\textTo}{\tikz \draw  (0,0) -- (-3.25ex,0) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex);\xspace}
+\DeclareRobustCommand{\mathTo}{\mathrel{\textTo}}
+\DeclareRobustCommand{\To}{\ifmmode\expandafter\mathTo\else\expandafter\textTo\fi}
+
+\DeclareRobustCommand{\textnotTo}{\tikz \draw  (0,0) -- (-3.25ex,0) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex) (-2ex,-.75ex) -- (-1ex,.75ex);}
+\DeclareRobustCommand{\mathnotTo}{\mathrel{\textnotTo}}
+\DeclareRobustCommand{\notTo}{\ifmmode\mathnotTo\else\textnotTo\fi\xspace}
+
+\DeclareRobustCommand{\textFrom}{\tikz \draw  (0,0) -- (3.25ex,0) (.5ex,.5ex) -- (0,0) -- (.5ex,-.5ex);}
+\DeclareRobustCommand{\mathFrom}{\mathrel{\textFrom}}
+\DeclareRobustCommand{\From}{\ifmmode\mathFrom\else\textFrom\fi\xspace}
+
+\DeclareRobustCommand{\textMapsTo}{\tikz \draw  (0,0) -- (-3.25ex,0) (-.5ex,.5ex) -- (0,0) -- (-.5ex,-.5ex) (-3.25ex,-.5ex) -- +(0,1ex);}
+\DeclareRobustCommand{\mathMapsTo}{\mathrel{\textMapsTo}}
+\DeclareRobustCommand{\MapsTo}{\ifmmode\mathMapsTo\else\textMapsTo\fi\xspace}
+
+\DeclareRobustCommand{\textMapsFrom}{\tikz \draw  (0,0) -- (3.25ex,0) (.5ex,.5ex) -- (0,0) -- (.5ex,-.5ex) (3.25ex,-.5ex) -- +(0,1ex);}
+\DeclareRobustCommand{\mathMapsFrom}{\mathrel{\textMapsFrom}}
+\DeclareRobustCommand{\MapsFrom}{\ifmmode\expandafter\mathMapsFrom\else\expandafter\textMapsFrom\expandafter\xspace\fi}
+
+\endinput
